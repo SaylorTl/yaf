@@ -1,0 +1,138 @@
+{
+  "本体维修金": [
+    {
+      "type": "propertyFee",
+      "params": {
+        "Area": "billing_calculate_num"
+      },
+      "response": {
+        "Price": "price",
+        "TotalFee": "total_fee"
+      },
+      "method": "getHouseArea",
+      "unit": "㎡"
+    }
+  ],
+  "物业管理费": [
+    {
+      "type": "propertyFee",
+      "params": {
+        "Area": "billing_calculate_num"
+      },
+      "response": {
+        "Price": "price",
+        "TotalFee": "total_fee"
+      },
+      "method": "getHouseArea",
+      "unit": "㎡"
+    },
+    {
+      "type": "penaltyFee",
+      "params": {
+        "TotalDays": "total_days",
+        "Amount": "amount"
+      },
+      "response": {
+        "Days": "days",
+        "Rate": "price",
+        "Fee": "total_fee"
+      },
+      "method": "getPenaltyParams",
+      "unit": "‰"
+    }
+  ],
+  "水费": [
+    {
+      "type": "propertyFee",
+      "params": {
+        "Quantity": "billing_calculate_num"
+      },
+      "response": {
+        "Price": "price",
+        "TotalFee": "total_fee"
+      },
+      "method": "getWaterQuantity",
+      "unit": "m³"
+    },
+    {
+      "type": "penaltyFee",
+      "params": {
+        "TotalDays": "total_days",
+        "Amount": "amount"
+      },
+      "response": {
+        "Days": "days",
+        "Rate": "price",
+        "Fee": "total_fee"
+      },
+      "method": "getPenaltyParams",
+      "unit": "‰"
+    }
+  ],
+  "电费": [
+    {
+      "type": "propertyFee",
+      "params": {
+        "Quantity": "billing_calculate_num"
+      },
+      "response": {
+        "Price": "price",
+        "TotalFee": "total_fee"
+      },
+      "method": "getElectricQuantity",
+      "unit": "度"
+    },
+    {
+      "type": "penaltyFee",
+      "params": {
+        "TotalDays": "total_days",
+        "Amount": "amount"
+      },
+      "response": {
+        "Days": "days",
+        "Rate": "price",
+        "Fee": "total_fee"
+      },
+      "method": "getPenaltyParams",
+      "unit": "‰"
+    }
+  ],
+  "月卡": [
+    {
+      "type": "Parking",
+      "params": {
+        "Quantity": "billing_calculate_num"
+      },
+      "response": {
+        "Price": "price",
+        "TotalFee": "total_fee"
+      },
+      "method": []
+    }
+  ],
+  "年卡": [
+    {
+      "type": "Parking",
+      "params": {
+        "Quantity": "billing_calculate_num"
+      },
+      "response": {
+        "Price": "price",
+        "TotalFee": "total_fee"
+      },
+      "method": []
+    }
+  ],
+  "临停": [
+    {
+      "type": "Parking",
+      "params": {
+        "Quantity": "billing_calculate_num"
+      },
+      "response": {
+        "TotalFee": "total_fee"
+      },
+      "method": []
+    }
+  ]
+}

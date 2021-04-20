@@ -1,0 +1,18 @@
+{
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    },
+    "require": {
+        "respect/validation": "^1.1",
+        "jukylin/jaeger-php" : "v2.0.9-beta",
+        "opentracing/opentracing":"1.0.0-beta5",
+        "phpmailer/phpmailer": "^6.1",
+        "guzzlehttp/guzzle": "^7.2",
+        "ralouphie/getallheaders": "^3.0",
+        "nesbot/carbon": "^2.43",
+        "phpoffice/phpspreadsheet": "1.12.0"
+    }
+}

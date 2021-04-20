@@ -1,0 +1,14 @@
+stages:
+    - build
+
+build_image:
+  stage: build
+  script:
+    - ls -la
+    - docker build --pull -t "$CI_REGISTRY_TEST_IMAGE:$CI_JOB_ID" .
+    - docker push "$CI_REGISTRY_TEST_IMAGE:$CI_JOB_ID"
+    - docker rmi "$CI_REGISTRY_TEST_IMAGE:$CI_JOB_ID"
+  only:
+    - test
+  tags:
+    - code

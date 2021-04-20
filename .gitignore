@@ -1,0 +1,9 @@
+src/service/config/application.ini
+src/service/config/ini/prod/*
+src/service/data/logs/*
+src/service/data/cache/*
+src/service/data/certs/*
+src/public/upload/*
+src/public/temp/*
+.remote-sync.json
+.idea
